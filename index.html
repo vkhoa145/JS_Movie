@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    
+
+</head>
+<body>
+    <!-- Nav Bar-->
+    <nav class="nav-bar">
+        <div class="nav-bar__logo">
+            <a href="#">WebPhim</a>
+        </div>
+       
+        <div class="nav-bar__list">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Phim</a>
+                    <i class="fa-solid fa-caret-down"></i>
+
+                </li>
+                <li>
+                    <a href="#">Đặt vé</a>
+                </li>
+                <li>
+                    <a href="#">Rạp</a>
+                </li>
+                <li>
+                    <a href="#">Hỗ trợ</a>
+                </li>
+                <li>
+                    <a href="#">Thành viên</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-bar__user">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-bar__mobile">
+            <button class="navbar-toggle" type="button" data-toggle="collapse">
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- End of nav bar  -->
+    <!-- Carousell -->
+    <div class="carousell" id="carousell">
+        <div class="carousell-inner" >
+            <div class="carousell-item">
+                <img src="./img/home_slider.jpg" alt="g1">
+            </div>
+            <div class="carousell-item">
+                <img src="./img/founded_img.jpeg" alt="g1">
+            </div>
+            <div class="carousell-item active">
+                <img src="./img/g3.png" alt="g1">
+            </div>
+        </div>
+        
+        <button class="left" onclick="plusSlide(-1)">
+            <i class="fa-solid fa-arrow-left" ></i>
+        </button>
+        
+        <button class="right" onclick="plusSlide(1)">
+            <i class="fa-solid fa-arrow-right" ></i>
+        </button>
+    </div>
+    <!-- End of Carousell -->
+    <!-- Movie List  -->
+    <!-- 1. Current show -->
+    <div class="movie">
+        <h1>PHIM ĐANG CHIẾU</h1>
+        <div class="current-movie" id="current-movie">
+            
+            <!-- <div class="movie-content">
+                <div class="movie-poster">
+                    <img src="./img/cap.jpeg" alt="captain">
+                </div>
+                <div class="movie-content__container">
+                    <h2>Captain America</h2>
+                    <p>This is a movie about the first avenger...</p>
+                    <div class="movie-content__user">
+                        <button>XEM CHI TIẾT</button>
+                        <button>ĐẶT VÉ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-content">
+                <div class="movie-poster">
+                    <img src="./img/cap.jpeg" alt="captain">
+                </div>
+                <div class="movie-content__container">
+                    <h2>Captain America</h2>
+                    <p>This is a movie about the first avenger...</p>
+                    <div class="movie-content__user">
+                        <button>XEM CHI TIẾT</button>
+                        <button>ĐẶT VÉ</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-content">
+                <div class="movie-poster">
+                    <img src="./img/cap.jpeg" alt="captain">
+                </div>
+                <div class="movie-content__container">
+                    <h2>Captain America</h2>
+                    <p>This is a movie about the first avenger...</p>
+                    <div class="movie-content__user">
+                        <button>XEM CHI TIẾT</button>
+                        <button>ĐẶT VÉ</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="soon-movie" id="soon-movie"></div>
+    </div>
+    <!-- 2. Soon  -->
+    <!-- End of Movie list  -->
+
+    <!-- Font Awsome Kit -->
+    <script src="https://kit.fontawesome.com/5efe0bd96b.js" crossorigin="anonymous"></script>
+    <!-- Index.js -->
+    <script src="./index.js"></script>
+</body>
+</html>

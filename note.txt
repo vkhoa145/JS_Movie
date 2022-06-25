@@ -1,0 +1,48 @@
+1. Bảng màu 
+- Lấy từ link: https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=3949AB&secondary.color=FFA726
+- Tạo biến cho các màu 
+2. Thư viện 
+- Boostrap 4 
+- Font Awesome
+3. Bố cục trang Home
+3.1. Nav Bar 
+3.2. Carousell 
+3.3. Bộ lọc phim, tìm phim và tìm rạp
+3.4. List phim 
+3.5. Footer
+    3.1. Nav Bar 
+        - Bố cục: 3 phần
+            + Logo phim 
+                Vị trí: rìa trái màn hình, cách mép màn hình 1 khoảng cách = var(--padding-x)
+            + Navigation
+                Vị trí: giữa màn hình 
+                Font size: 2rem
+                Element: cách đều nhau
+            + User
+                Vị trí: rìa phải màn hình, cách mép màn hình 1 khoảng cách bằng = var(--padding-x)
+                Font size: 2rem
+                Element: dark theme toggle button, language change button, user login button
+            + Mobile navigation
+                Kích hoạt khi responsive với màn hình điện thoại 
+                Logo vẫn được thể hiện
+                Thanh navigation sẽ không hiển thị 
+                Tạo nút danh sách --> để thanh navigation vào trong 
+                Giữ lại và điều chỉnh phần User
+        - Thống nhất spacing giữa các element, font size, màu
+        - Tạo toggle button giữa light và dark theme
+        - Tạo language change button 
+        - Điều chỉnh phần user login
+    3.2. Carousel
+        - Tự làm slider: cả tự động và nút bấm 
+        - Indicator slider
+    3.3. List phim 
+        - List phim sẽ tự động cập nhật phim 
+        - Áp dụng slider vào list phim 
+        - list phim gồm 2 phần: phim đang chiếu và phim sắp chiếu
+        - Mỗi phim sẽ có: hình ảnh, tên phim, miêu tả, nút đặt vé và nút xem chi tiết phim  
+        - Mỗi phim sẽ có trang chi tiết phim riêng (trang chi tiết bố cục giống nhau)
+        - hiệu ứng hover, transition giống nhau 
+        - Các thẻ phim thiết kế theo phong cách mềm mại, các góc bo tròn, chuyển động phải nhẹ nhàng không được giật
+        - Slider: danh sách phim lặp lại vô tận, không được có khoảng trống trong slider (giống netflix) 
+        
+

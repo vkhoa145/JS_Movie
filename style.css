@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+html {
+    font-size: 10px;
+    
+}
+:root {
+    /* Components dimension */
+    --nav-height: 4rem;
+    --nav-width: 100%;
+    --carousell-height:50rem;
+    --carousell-width:100%;
+    --movie-height:50rem;
+    /* Color Variables */
+    --color-primary: #bdbdbd;
+    --color-primary__light:#efefef;
+    --color-primary__dark:#8d8d8d;
+    --color-primary__text:#000000;
+    --color-secondary:#2196f3;
+    --color-secondary__light:#6ec6ff;
+    --color-secondary__dark:#0069c0;
+    --color-secondary__text:#000000;
+    /* Spacing Variables */
+    --padding-x: 5rem;
+    --padding-y: 1rem;
+    /* Font Size Variables */
+    --font-a: 2rem;
+    --font-h1: 3rem;
+    --font-h2: 1.5rem;
+    /* Width of item */
+    --one-item__width: 100%;
+    --two-item__width: 50%;
+    --three-item__width: 33.33%;
+    /* Height of item */
+    
+
+    
+}
+/* NAV BAR */
+.nav-bar {
+    display: flex;
+    height: var(--nav-height);
+    width: var(--nav-width);
+    background: var(--color-primary);
+    color: var(--color-primary__text);
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+
+}
+.nav-bar a {
+    color: var(--color-primary__text);
+    text-decoration: none;
+    font-size: var(--font-a);
+    vertical-align: middle;
+    
+    
+}
+/* Nav Bar: Logo section */
+.nav-bar .nav-bar__logo {
+    width: 33.33%;
+    padding-left: var(--padding-x);
+    
+}
+.nav-bar .nav-bar__logo a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+/* Nav Bar: List section */
+.nav-bar .nav-bar__list {
+    width: 33.33%;
+    
+
+}
+.nav-bar .nav-bar__list ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    
+}
+.nav-bar .nav-bar__list ul a {
+    font-size: var(--font-a);
+    
+    
+}
+/* Nav Bar: User section */
+.nav-bar .nav-bar__user {
+    width: 33.33%;
+    padding-right: var(--padding-x);
+    
+}
+.nav-bar .nav-bar__user ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    justify-content: flex-end;
+}
+
+
+
+
+/* Nav Bar: Mobile responsive */
+.nav-bar .nav-bar__mobile {
+    display: none;
+}
+
+/* CAROUSELL */
+.carousell {
+    
+    height: var(--carousell-height);
+    background: var(--color-primary);
+    
+}
+.carousell .carousell-inner {
+    display: flex;
+    height: 100%;
+    padding-top: var(--nav-height);
+}
+.carousell .carousell-inner .carousell-item{
+    width: var(--one-item__width);
+    display: none;
+    padding: var(--padding-y) var(--padding-x);
+    
+}
+.carousell .carousell-inner .carousell-item img{
+    width: 100%;
+    height: 100%;
+}
+.carousell button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+
+}
+
+
+
+/* MOVIES*/
+.movie {
+    padding: var(--padding-y) var(--padding-x);
+    background: var(--color-primary);
+    height: var(--movie-height);
+}
+.movie .current-movie {
+    width: 100%;
+    height: 100%;
+    background: var(--color-primary__light);
+}
+.movie h1 {
+    text-align: center;
+    color: var(--color-primary__text);
+    font-size: var(--font-h1);
+    display: block;
+    height: 10%;
+    
+   
+}
+
+/* Each movie component */
+.movie .current-movie {
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.movie .movie-content { 
+    /* try to auto sizing element which depended on quanitty of movie */
+    width: 20%; 
+    height: 100%;
+}
+/* Poster */
+.movie .movie-content .movie-poster {
+    height: 80%;
+
+}
+.movie .movie-content .movie-poster img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Content of Movie */
+.movie .movie-content .movie-content__container {
+   
+    height: 20%;
+    background: var(--color-primary__dark);
+}
+.movie .current-movie .movie-content .movie-content__container h2 {
+    text-align: center;
+    color: var(--color-primary__text);
+    font-size: var(--font-h2);
+    height: 20%;
+}
+.movie .current-movie .movie-content .movie-content__container p {
+    padding: 1rem;
+    height: 40%;
+}
+/* User interaction */
+.movie .movie-content .movie-content__container .movie-content__user {
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.movie .movie-content .movie-content__container .movie-content__user button {
+    background: var(--color-secondary__dark);
+    height: 100%;
+    width: 50%;
+    color: var(--color-secondary__text);
+}
